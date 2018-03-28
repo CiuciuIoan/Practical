@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigate_to_secondary_activity_button"
+            android:text="Navigate to secondary activity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <EditText
+            android:id="@+id/left_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="true"
+            android:enabled="false"
+            android:inputType="number"
+            android:ems="7"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/navigate_to_secondary_activity_button"
+            android:gravity="center"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/right_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="true"
+            android:enabled="false"
+            android:inputType="number"
+            android:ems="7"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/navigate_to_secondary_activity_button"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/left_edit_text"
+            android:layout_below="@id/left_edit_text"
+            android:layout_alignRight="@id/left_edit_text"
+            android:text="Press ME!" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/right_edit_text"
+            android:layout_alignRight="@id/right_edit_text"
+            android:layout_below="@id/right_edit_text"
+            android:text="Pres Me Too!" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
